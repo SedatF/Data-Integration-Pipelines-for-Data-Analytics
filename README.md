@@ -190,3 +190,24 @@ All the 3 linked services successfully created:
   <img src="screenshot/" alt="data model" width="1000">
 
 
+# Step 5: Data Aggregation and Parameterization
+
+In this step, we'll extract the 2021 year data and historical data, merge, aggregate and store it in Synapse Analytics. The aggregation will be on Agency Name, Fiscal Year and TotalPaid.
+
+### 1.Create a Summary table in Synapse and create a dataset named table_synapse_nycpayroll_summary
+<img src="screenshot/" alt="data model" width="1000">
+
+### 2.Create a new dataset for the Azure Data Lake Gen2 folder that contains the historical files.
+<img src="screenshot/" alt="data model" width="1000">
+
+
+### 3.Create new data flow and name it Dataflow Aggregate Data
+  - Create a data flow level parameter for Fiscal Year
+  - Add first Source for table_sqldb_nyc_payroll_data table
+  - Add second Source for the Azure Data Lake history folder
+    
+### 4.Create a new Union activity in the data flow and Union with history files
+  <img src="screenshot/" alt="data model" width="1000">
+
+
+
