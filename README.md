@@ -88,32 +88,32 @@ All the 3 linked services successfully created:
   - Select DelimitedText
   - Set the path to the nycpayroll_2021.csv in the Data Lake
   - Preview the data to make sure it is correctly parsed
-  <img src="screenshot/" alt="data model" width="1000">
+  <img src="screenshot/Data_Factory_Preview.jpg" alt="data model" width="1000">
 
-  <img src="screenshot/" alt="data model" width="1000">
+  <img src="screenshot/Data_Factory_01.jpg" alt="data model" width="1000">
 
 ### 2. Repeat the same process to create datasets for the rest of the data files in the Data Lake
   - EmpMaster.csv
   - TitleMaster.csv
   - AgencyMaster.csv
   - Remember to publish all the datasets
-  <img src="screenshot/" alt="data model" width="1000">
+  <img src="screenshot/Data_Factory_02.jpg" alt="data model" width="1000">
 
 ### 3. Create the dataset for transaction data table that should contain current (2021) data in SQL DB
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Data_Factory_SQLDB.jpg" alt="data model" width="1000">
 
 ### 4. Create the datasets for destination (target) tables in Synapse Analytics
   - dataset for NYC_Payroll_EMP_MD
-  <img src="screenshot/" alt="data model" width="1000">
+  <img src="screenshot/Data_Factory_EMP.jpg" alt="data model" width="1000">
 
   - for NYC_Payroll_TITLE_MD
-    <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Data_Factory_Title.jpg" alt="data model" width="1000">
 
   - for NYC_Payroll_AGENCY_MD
-    <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Data_Factory_Agent.jpg" alt="data model" width="1000">
 
   - for NYC_Payroll_Data
-    <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Data_Factory_Payroll_Data.jpg" alt="data model" width="1000">
 
 # Step 4: Create Data Flows
 
