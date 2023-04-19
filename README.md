@@ -31,36 +31,35 @@ Create an Azure Data Lake Storage Gen2 (storage account) with three directories 
   - dirhistoryfiles
   - dirstaging
 
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/DataLake_1.jpg" alt="data model" width="1000">
 
 Upload data from the project data to the dirpayrollfiles folder
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/DataLake_2.jpg" alt="data model" width="1000">
 
 Upload `nycpayroll_2020.csv` file (historical data) from the project data to the dirhistoryfiles folder
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/DataLake_3.jpg" alt="data model" width="1000">
 
 ### 2. Create an Azure Data Factory Resource
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Data_Lake_4.jpg" alt="data model" width="1000">
 
 ### 3. Create a SQL Database to store the current year of the payroll data
-<img src="screenshot/" alt="data model" width="1000">
 
 Create a table called `NYC_Payroll_Data` in db_nycpayroll in the Azure Query Editor with SQL Script:
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/NYC_Payroll_Data.jpg" alt="data model" width="1000">
 
 ### 4. Create A Synapse Analytics workspace
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Analytics_workspace.jpg" alt="data model" width="1000">
 
 Create a SQL dedicated pool in the Synapse Analytics workspace
   - Select DW100c as performance level. 
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Pool.png" alt="data model" width="1000">
 
 In the SQL dedicated pool, Create master data tables and payroll transaction tables:
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/payroll_transaction_tables.jpg" alt="data model" width="1000">
 
 The table are successfully created in the SQL Database
 
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/SQLDB_Tables.jpg" alt="data model" width="1000">
 
 
 # Step 2: Create Linked Services
