@@ -69,19 +69,18 @@ The table are successfully created in the SQL Database
 In Azure Data Factory, create a linked service to the data lake that contains the data files
   - From the data stores, select Azure Data Lake Gen 2
   - Test the connection
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Linked_service_Gen2.jpg" alt="data model" width="1000">
 
 ### 2.Create a Linked Service to SQL Database that has the current (2021) data
 If you get a connection error, remember to add the IP address to the firewall settings in SQL DB in the Azure Portal
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Linked_service_2.jpg" alt="data model" width="1000">
 
 
 ### 3. Create a Linked Service for Synapse Analytics
   - Create the linked service to the SQL pool.
-<img src="screenshot/" alt="data model" width="1000">
 
 All the 3 linked services successfully created:
-<img src="screenshot/" alt="data model" width="1000">
+<img src="screenshot/Linked_synapse.jpg" alt="data model" width="1000">
 
 # Step 3: Create Datasets in Azure Data Factory
 
