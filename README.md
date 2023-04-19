@@ -59,7 +59,7 @@ In the SQL dedicated pool, Create master data tables and payroll transaction tab
 
 The table are successfully created in the SQL Database
 
-<img src="screenshot/SQLDB_Tables.jpg" alt="data model" width="1000">
+<img src="screenshot/SQLDB_Tables.jpg" alt="data model" width="300">
 
 
 # Step 2: Create Linked Services
