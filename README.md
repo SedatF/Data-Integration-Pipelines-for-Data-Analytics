@@ -119,43 +119,32 @@ All the 3 linked services successfully created:
 
 ### 1 .In Azure Data Factory, create the data flow to load 2021 Payroll Data to SQL DB transaction table (in the future NYC will load all the transaction data into this table).
   - Create a new data flow
-  - Select the dataset for the 2021 payroll file as the source
-   <img src="screenshot/" alt="data model" width="1000">
-    
-  
+  - Select the dataset for the 2021 payroll file as the source  
   - Select the sink dataset as the payroll table on SQL DB
-   <img src="screenshot/" alt="data model" width="1000">
-
   - Make sure to reassign any missing source to target mappings
-   <img src="screenshot/" alt="data model" width="1000">
+  The screenshot is as below : 
+  
+   <img src="screenshot/Create_Data_Flows_1.png" alt="data model" width="1000">
 
 ### 2.Create Pipeline to load 2021 Payroll data into transaction table in the SQL DB
   - Create a new pipeline
   - Select the data flow to load the 2021 file into SQLDB
-    <img src="screenshot/" alt="data model" width="1000">
-
-  - Trigger the pipeline
-    <img src="screenshot/" alt="data model" width="1000">
-
-  - Monitor the pipeline
-    <img src="screenshot/" alt="data model" width="1000">
-
+  - Trigger the pipeline , Monitor the pipeline
   - Take a screenshot of the Azure Data Factory screen pipeline run after it has finished.
-    <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Create_DataFlow_2.png" alt="data model" width="1000">
 
   - Make sure the data is successfully loaded into the SQL DB table
-    <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Create_DataFlow_3.png" alt="data model" width="1000">
 
 ### 3. Create data flows to load the data from the data lake files into the Synapse Analytics data tables
   - Create the data flows for loading Employee, Title, and Agency files into corresponding SQL pool tables on Synapse Analytics
   - For each Employee, Title, and Agency file data flow, sink the data into each target Synaspe table
-  - 
-    <img src="screenshot/" alt="data model" width="1000">
-    
-    <img src="screenshot/" alt="data model" width="1000">
+  
+    <img src="screenshot/Create_DataFlow_4.png" alt="data model" width="1000">
+    <img src="screenshot/Create_DataFlow_5.png" alt="data model" width="1000">
 
 ### 4. Create a data flow to load 2021 data from SQL DB to Synapse Analytics
-   <img src="screenshot/" alt="data model" width="1000">
+   <img src="screenshot/Create_DataFlow_6.png" alt="data model" width="1000">
   
 
 ### 5. Create pipelines for Employee, Title, Agency, and year 2021 Payroll transaction data to Synapse Analytics containing the data flows.
@@ -164,28 +153,11 @@ All the 3 linked services successfully created:
   - Validate and publish the pipelines
     
     #### Employee
-    <img src="screenshot/" alt="data model" width="1000">
-   
-   #### Title
-   <img src="screenshot/" alt="data model" width="1000">
-   
-   #### Year 2021
-   <img src="screenshot/" alt="data model" width="1000">
-
-
-  #### Agency
-   <img src="screenshot/" alt="data model" width="1000">
-
-
-  #### Year 2021
-   <img src="screenshot/" alt="data model" width="1000">
+    <img src="screenshot/Create_DataFlow_7.png" alt="data model" width="1000">
+    <img src="screenshot/Create_DataFlow_8.png" alt="data model" width="1000">
      
-  #### Load all to synapse
-  <img src="screenshot/" alt="data model" width="1000">
-
-  
-  #### All pipelines were run successfully
-  <img src="screenshot/" alt="data model" width="1000">
+    #### Load all to synapse
+    <img src="screenshot/Create_DataFlow_9.png" alt="data model" width="1000">
 
 
 # Step 5: Data Aggregation and Parameterization
