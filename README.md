@@ -159,6 +159,8 @@ All the 3 linked services successfully created:
     #### Load all to synapse
     <img src="screenshot/Create_DataFlow_9.png" alt="data model" width="1000">
 
+    #### All pipelines were run successfully
+    <img src="screenshot/Pipline_run.png" alt="data model" width="1000">  
 
 # Step 5: Data Aggregation and Parameterization
 
